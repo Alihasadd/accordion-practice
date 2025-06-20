@@ -4,7 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-,:before, *:after {
+:before, *:after {
   box-sizing: inherit;
 }
 
@@ -34,10 +34,19 @@ a {
 button, input, select, textarea {
   font: inherit;
   margin: 0;
+  margin: 5px;
+  border: 3px turquoise solid;
+  background-color: pink;
 }
 
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
   height: auto;
+
+}
+
+.accordion {
+  border: 5px purple solid;
+  padding: 2px;
 }
