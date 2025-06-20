@@ -3,6 +3,7 @@ import { React, useState } from 'react';
 const Accordion = () => {
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
 
     return (
         <div>
@@ -19,6 +20,12 @@ const Accordion = () => {
                 {isOpen2 ? (
                     <div>I ran into this exact problem when I was building a tool to generate newsletter issues.</div>
                 ) : <div>I didn't know the name of every subscriber. If I didn't know their name, I wanted to render a “fallback” value:</div> }
+            </div>
+            <div className='accordion'>
+                <button onClick={() => setIsOpen3(!isOpen3)}>+</button>
+                {isOpen3 ? (
+                    <div>Click me</div>
+                ) : <div>Well done!</div> }
             </div>
         </div>    
     )
