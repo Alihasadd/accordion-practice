@@ -47,6 +47,11 @@ img, picture, video, canvas, svg {
 }
 
 .accordion {
-  border: 5px purple solid;
+  border-bottom: 5px purple solid;
+  
   padding: 2px;
+}
+
+.accordion:hover {
+  background-color: lightblue;
 }
